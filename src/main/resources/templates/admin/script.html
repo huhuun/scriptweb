@@ -32,6 +32,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Google Font -->
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <style type="text/css">
+  .form-group{
+  	overflow: hidden;
+  }
+  
+  </style>      
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -452,27 +458,37 @@ desired effect
 					新增脚本
 				</h4>
 			</div>
-			<div class="modal-body">
-				<form>
-		        <div class="form-group">
-                  <label for="scriptName" class="col-sm-2 control-label">脚本名称1:</label>
-                  <div class="col-sm-5">
-                    <input type="text" class="form-control" id="scriptName">
-                  </div>
-                </div>
-		        <div class="form-group">
-                  <label for="intro" class="col-sm-2 control-label">脚本介绍:</label>
-                  <div class="col-sm-5">
-                    <input type="text" class="form-control" id="intro">
-                  </div>
-                </div>
-               </form> 
+			<div class="modal-body" style="overflow: hidden;">
+				<form class="col-md-offset-1" method="post" action="#">
+				
+					<div class="form-group">
+	                  <label for="scriptName" class="col-sm-3 control-label text-right">脚本logo：</label>
+	                  <div class="col-sm-6">
+	                  	<a href="#" class="thumbnail" style="display:none">
+						   <img src="" id="logoImg" alt="...">
+						</a>
+	                    <input type="file" name="logo" id="logo" accept="image/*">
+	                  </div>
+	                </div>
+			        <div class="form-group">
+	                  <label for="scriptName" class="col-sm-3 control-label text-right">脚本名称：</label>
+	                  <div class="col-sm-6">
+	                    <input type="text" class="form-control" id="scriptName">
+	                  </div>
+	                </div>
+			        <div class="form-group">
+	                  <label for="intro" class="col-sm-3 control-label text-right">脚本介绍：</label>
+	                  <div class="col-sm-6">
+	                    <input type="text" class="form-control" id="intro">
+	                  </div>
+	                </div>
+                </form>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
 				</button>
-				<button type="button" class="btn btn-primary">
-					提交更改
+				<button type="submit" class="btn btn-primary">
+					提交  
 				</button>
 			</div>
 		</div><!-- /.modal-content -->
@@ -505,6 +521,17 @@ desired effect
      user experience. -->
 <script>
   $(function () {
+	 
+	  $("#logo").change(function(e){
+		  //var url = $(this).val();
+		  var url = window.URL.createObjectURL($(this).prop("files")[0]);
+		  //console.log(window.createOjcectURL($(this)));
+		  $('#logoImg').attr('src',url);
+		  $('#logoImg').parent().show();
+	  })
+	  
+	  
+	  
     $('#table').DataTable({
     	 dom: "<'row'<'col-sm-12 col-md-6'B><'col-sm-12 col-md-6'f>>" +
     	"<'row'<'col-sm-12'tr>>" +
