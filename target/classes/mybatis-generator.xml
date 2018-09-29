@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!--<classPathEntry location="D:/Project/workspace-hz/com.ccps/ext/ojdbc6-11.2.0.3.0.jar" />-->
+        <!-- <classPathEntry location="C:\Users\zhusj20969\Desktop\mybatis-generator-core-1.3.2\mybatis-generator-core-1.3.2\lib\mysql-connector-java-5.1.25-bin.jar" /> -->
+
+    <context id="context1">
+        <commentGenerator>  
+            <property name="suppressDate" value="true"/>  
+            <!-- 取消注释 -->  
+            <property name="suppressAllComments" value="true"/>  
+        </commentGenerator> 
+
+        <!-- oracle.jdbc.OracleDriver -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        	 connectionURL="jdbc:mysql://localhost:3306/script?characterEncoding=UTF-8"
+             password="root" userId="root" />
+
+        <!-- targetProject:pojo-->  
+        <javaModelGenerator targetPackage="com.yoyu.pojo" targetProject="F:\software\eclipse\workspace\workspace-scriptweb\scriptweb\src\main\java" />
+		<!-- 
+			文件生成路径问题：targetProject + targetPackage = 完整的文件在工程中的路径
+			工程名：auto_wb 
+			sourceFolder:src/main/java
+			包名：com.zsj.pojo
+			targetProject = 工程名 + 文件想被生成的位置的sourceFolder
+			targetPackage = 文件想被生成的位置包名
+		-->
+        <!-- mapper.xml -->
+         <sqlMapGenerator targetPackage="com.yoyu.mapper" targetProject="F:\software\eclipse\workspace\workspace-scriptweb\scriptweb\src\main\resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+        <!-- mapper.java -->
+        <javaClientGenerator targetPackage="com.yoyu.mapper" targetProject="F:\software\eclipse\workspace\workspace-scriptweb\scriptweb\src\main\java" type="XMLMAPPER">
+        </javaClientGenerator>
+        
+       <!--  <table tableName="client_info"></table>
+        <table tableName="client_script"></table> -->
+        <table tableName="script_info"></table>
+    </context>
+</generatorConfiguration>
+<!-- 命令行运行：-->
+<!-- java -jar mybatis-generator-core-1.3.2.jar -configfile generatorConfig.xml -overwrite -->

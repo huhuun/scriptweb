@@ -1,0 +1,244 @@
+2018-09-28 00:00:07,455 INFO (StartupInfoLogger.java:48)- Starting Application on DESKTOP-GG6D0SA with PID 1832 (F:\software\eclipse\workspace\workspace-scriptweb\scriptweb\target\classes started by shuju in F:\software\eclipse\workspace\workspace-scriptweb\scriptweb)
+2018-09-28 00:00:07,462 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2018-09-28 00:00:07,463 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-09-28 00:00:09,363 INFO (StartupInfoLogger.java:57)- Started Application in 1.998 seconds (JVM running for 98.188)
+2018-09-28 00:00:18,939 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:00:18,988 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:00:19,013 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:00:19,017 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:00:19,018 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:00:19,026 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:01:34,398 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:01:34,399 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:01:34,401 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:01:34,403 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:01:34,404 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:01:34,416 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:01:45,619 INFO (StartupInfoLogger.java:48)- Starting Application on DESKTOP-GG6D0SA with PID 1832 (F:\software\eclipse\workspace\workspace-scriptweb\scriptweb\target\classes started by shuju in F:\software\eclipse\workspace\workspace-scriptweb\scriptweb)
+2018-09-28 00:01:45,620 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2018-09-28 00:01:45,620 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-09-28 00:01:47,327 INFO (StartupInfoLogger.java:57)- Started Application in 1.788 seconds (JVM running for 196.152)
+2018-09-28 00:03:38,333 INFO (StartupInfoLogger.java:48)- Starting Application on DESKTOP-GG6D0SA with PID 17356 (F:\software\eclipse\workspace\workspace-scriptweb\scriptweb\target\classes started by shuju in F:\software\eclipse\workspace\workspace-scriptweb\scriptweb)
+2018-09-28 00:03:38,335 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2018-09-28 00:03:38,335 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-09-28 00:03:44,645 INFO (StartupInfoLogger.java:57)- Started Application in 6.755 seconds (JVM running for 7.643)
+2018-09-28 00:05:23,741 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:05:23,771 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:05:23,795 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:05:23,798 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:05:23,799 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:05:23,807 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:06:47,268 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:06:47,269 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:06:47,270 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:06:47,272 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:06:47,273 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:06:47,283 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:07:13,245 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:07:13,246 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:07:13,248 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:07:13,250 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:07:13,251 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:07:13,255 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:16:04,696 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:16:04,697 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:16:04,699 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:16:04,701 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:16:04,702 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:16:04,708 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:16:12,961 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:16:12,962 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:16:12,964 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:16:12,966 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:16:12,967 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:16:12,971 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:16:38,613 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:16:38,614 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:16:38,616 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:16:38,618 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:16:38,619 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:16:38,623 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:16:44,190 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:16:44,191 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:16:44,193 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:16:44,196 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:16:44,197 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:16:44,201 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:17:31,295 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:17:31,296 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:17:31,298 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:17:31,302 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:17:31,304 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:17:31,309 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:17:46,707 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:17:46,708 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:17:46,710 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:17:46,712 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:17:46,713 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:17:46,717 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:18:37,105 INFO (StartupInfoLogger.java:48)- Starting Application on DESKTOP-GG6D0SA with PID 13192 (F:\software\eclipse\workspace\workspace-scriptweb\scriptweb\target\classes started by shuju in F:\software\eclipse\workspace\workspace-scriptweb\scriptweb)
+2018-09-28 00:18:37,107 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2018-09-28 00:18:37,107 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-09-28 00:18:42,991 INFO (StartupInfoLogger.java:57)- Started Application in 6.331 seconds (JVM running for 7.229)
+2018-09-28 00:19:11,908 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:19:11,937 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:19:11,962 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:19:11,966 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:19:11,966 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:19:11,978 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:19:17,951 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:19:17,952 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:19:17,953 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:19:17,955 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:19:17,956 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:19:17,968 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:19:58,813 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:19:58,814 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:19:58,816 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:19:58,819 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:19:58,819 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:19:58,825 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:20:13,678 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:20:13,679 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:20:13,680 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:20:13,683 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:20:13,684 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:20:13,688 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:20:28,479 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:20:28,480 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:20:28,482 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:20:28,485 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:20:28,485 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:20:28,490 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:24:28,201 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:24:28,202 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:24:28,204 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:24:28,206 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:24:28,207 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:24:28,211 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:24:43,590 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:24:43,591 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:24:43,593 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:24:43,597 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:24:43,598 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:24:43,602 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:24:43,945 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:24:43,945 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:24:43,946 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:24:43,950 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:24:43,952 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:24:43,957 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:27:04,970 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:27:04,971 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:27:04,972 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:27:04,974 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:27:04,975 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:27:04,979 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:29:06,049 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:29:06,050 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:29:06,052 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:29:06,054 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:29:06,055 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:29:06,059 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:36:09,119 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:36:09,120 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:36:09,122 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:36:09,124 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:36:09,125 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:36:09,128 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:37:14,754 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:37:14,755 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:37:14,756 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:37:14,758 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:37:14,759 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:37:14,763 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:37:54,780 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:37:54,781 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:37:54,782 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:37:54,784 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:37:54,785 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:37:54,788 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:45:56,680 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:45:56,681 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:45:56,683 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:45:56,685 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:45:56,686 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:45:56,689 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:46:05,828 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:46:05,829 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:46:05,830 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:46:05,832 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:46:05,833 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:46:05,836 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:46:42,199 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:46:42,199 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:46:42,201 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:46:42,203 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:46:42,204 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:46:42,209 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:49:41,212 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:49:41,213 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:49:41,215 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:49:41,217 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:49:41,218 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:49:41,221 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:51:35,582 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:51:35,583 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:51:35,584 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:51:35,586 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:51:35,587 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:51:35,590 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:51:49,985 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:51:49,986 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:51:49,988 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:51:49,989 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:51:49,990 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:51:49,993 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:58:38,311 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:58:38,312 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:58:38,313 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:58:38,315 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:58:38,316 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:58:38,319 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 00:59:32,090 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 00:59:32,091 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 00:59:32,093 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 00:59:32,094 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 00:59:32,095 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 00:59:32,098 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 01:00:00,980 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 01:00:00,981 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 01:00:00,983 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 01:00:00,985 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 01:00:00,986 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 01:00:00,989 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 01:02:00,937 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 01:02:00,938 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 01:02:00,939 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 01:02:00,941 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 01:02:00,942 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 01:02:00,944 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 01:03:07,888 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 01:03:07,889 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 01:03:07,890 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 01:03:07,892 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 01:03:07,892 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 01:03:07,895 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 01:13:59,647 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 01:13:59,648 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 01:13:59,649 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 01:13:59,651 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ?, ? 
+2018-09-28 01:13:59,651 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer), 10(Integer)
+2018-09-28 01:13:59,653 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2018-09-28 01:14:01,739 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 01:14:01,740 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 01:14:01,758 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 01:14:01,760 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 01:14:01,761 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-28 01:14:01,764 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-28 01:14:04,637 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-28 01:14:04,638 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-28 01:14:04,640 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-28 01:14:04,642 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-28 01:14:04,643 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 100(Integer)
+2018-09-28 01:14:04,646 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 13

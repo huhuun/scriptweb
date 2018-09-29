@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yoyu.mapper.ScriptInfoMapper">
+  <resultMap id="BaseResultMap" type="com.yoyu.pojo.ScriptInfo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="script_name" jdbcType="VARCHAR" property="scriptName" />
+    <result column="intro" jdbcType="VARCHAR" property="intro" />
+    <result column="logo" jdbcType="VARCHAR" property="logo" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.yoyu.pojo.ScriptInfo">
+    <result column="detail" jdbcType="LONGVARCHAR" property="detail" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, script_name, intro, logo, create_time,detail
+  </sql>
+  <sql id="Blob_Column_List">
+    detail
+  </sql>
+  <select id="selectByExampleWithBLOBs" parameterType="com.yoyu.pojo.ScriptInfoExample" resultMap="ResultMapWithBLOBs">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from script_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" parameterType="com.yoyu.pojo.ScriptInfoExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from script_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from script_info
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from script_info
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.yoyu.pojo.ScriptInfoExample">
+    delete from script_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.yoyu.pojo.ScriptInfo">
+    insert into script_info (id, script_name, intro, 
+      logo, create_time, detail
+      )
+    values (#{id,jdbcType=INTEGER}, #{scriptName,jdbcType=VARCHAR}, #{intro,jdbcType=VARCHAR}, 
+      #{logo,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{detail,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.yoyu.pojo.ScriptInfo">
+    insert into script_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="scriptName != null">
+        script_name,
+      </if>
+      <if test="intro != null">
+        intro,
+      </if>
+      <if test="logo != null">
+        logo,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="detail != null">
+        detail,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="scriptName != null">
+        #{scriptName,jdbcType=VARCHAR},
+      </if>
+      <if test="intro != null">
+        #{intro,jdbcType=VARCHAR},
+      </if>
+      <if test="logo != null">
+        #{logo,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="detail != null">
+        #{detail,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.yoyu.pojo.ScriptInfoExample" resultType="java.lang.Long">
+    select count(*) from script_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update script_info
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.scriptName != null">
+        script_name = #{record.scriptName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.intro != null">
+        intro = #{record.intro,jdbcType=VARCHAR},
+      </if>
+      <if test="record.logo != null">
+        logo = #{record.logo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createTime != null">
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.detail != null">
+        detail = #{record.detail,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map">
+    update script_info
+    set id = #{record.id,jdbcType=INTEGER},
+      script_name = #{record.scriptName,jdbcType=VARCHAR},
+      intro = #{record.intro,jdbcType=VARCHAR},
+      logo = #{record.logo,jdbcType=VARCHAR},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      detail = #{record.detail,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update script_info
+    set id = #{record.id,jdbcType=INTEGER},
+      script_name = #{record.scriptName,jdbcType=VARCHAR},
+      intro = #{record.intro,jdbcType=VARCHAR},
+      logo = #{record.logo,jdbcType=VARCHAR},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yoyu.pojo.ScriptInfo">
+    update script_info
+    <set>
+      <if test="scriptName != null">
+        script_name = #{scriptName,jdbcType=VARCHAR},
+      </if>
+      <if test="intro != null">
+        intro = #{intro,jdbcType=VARCHAR},
+      </if>
+      <if test="logo != null">
+        logo = #{logo,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="detail != null">
+        detail = #{detail,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.yoyu.pojo.ScriptInfo">
+    update script_info
+    set script_name = #{scriptName,jdbcType=VARCHAR},
+      intro = #{intro,jdbcType=VARCHAR},
+      logo = #{logo,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      detail = #{detail,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yoyu.pojo.ScriptInfo">
+    update script_info
+    set script_name = #{scriptName,jdbcType=VARCHAR},
+      intro = #{intro,jdbcType=VARCHAR},
+      logo = #{logo,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

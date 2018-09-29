@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yoyu.mapper.ClientScriptMapper">
+  <resultMap id="BaseResultMap" type="com.yoyu.pojo.ClientScript">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="script_id" jdbcType="INTEGER" property="scriptId" />
+    <result column="client_id" jdbcType="INTEGER" property="clientId" />
+    <result column="expire_date" jdbcType="INTEGER" property="expireDate" />
+    <result column="active_time" jdbcType="TIMESTAMP" property="activeTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, script_id, client_id, expire_date, active_time, create_time
+  </sql>
+  <select id="selectByExample" parameterType="com.yoyu.pojo.ClientScriptExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from client_script
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from client_script
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from client_script
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.yoyu.pojo.ClientScriptExample">
+    delete from client_script
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.yoyu.pojo.ClientScript">
+    insert into client_script (id, script_id, client_id, 
+      expire_date, active_time, create_time
+      )
+    values (#{id,jdbcType=INTEGER}, #{scriptId,jdbcType=INTEGER}, #{clientId,jdbcType=INTEGER}, 
+      #{expireDate,jdbcType=INTEGER}, #{activeTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.yoyu.pojo.ClientScript">
+    insert into client_script
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="scriptId != null">
+        script_id,
+      </if>
+      <if test="clientId != null">
+        client_id,
+      </if>
+      <if test="expireDate != null">
+        expire_date,
+      </if>
+      <if test="activeTime != null">
+        active_time,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="scriptId != null">
+        #{scriptId,jdbcType=INTEGER},
+      </if>
+      <if test="clientId != null">
+        #{clientId,jdbcType=INTEGER},
+      </if>
+      <if test="expireDate != null">
+        #{expireDate,jdbcType=INTEGER},
+      </if>
+      <if test="activeTime != null">
+        #{activeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.yoyu.pojo.ClientScriptExample" resultType="java.lang.Long">
+    select count(*) from client_script
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update client_script
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.scriptId != null">
+        script_id = #{record.scriptId,jdbcType=INTEGER},
+      </if>
+      <if test="record.clientId != null">
+        client_id = #{record.clientId,jdbcType=INTEGER},
+      </if>
+      <if test="record.expireDate != null">
+        expire_date = #{record.expireDate,jdbcType=INTEGER},
+      </if>
+      <if test="record.activeTime != null">
+        active_time = #{record.activeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.createTime != null">
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update client_script
+    set id = #{record.id,jdbcType=INTEGER},
+      script_id = #{record.scriptId,jdbcType=INTEGER},
+      client_id = #{record.clientId,jdbcType=INTEGER},
+      expire_date = #{record.expireDate,jdbcType=INTEGER},
+      active_time = #{record.activeTime,jdbcType=TIMESTAMP},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yoyu.pojo.ClientScript">
+    update client_script
+    <set>
+      <if test="scriptId != null">
+        script_id = #{scriptId,jdbcType=INTEGER},
+      </if>
+      <if test="clientId != null">
+        client_id = #{clientId,jdbcType=INTEGER},
+      </if>
+      <if test="expireDate != null">
+        expire_date = #{expireDate,jdbcType=INTEGER},
+      </if>
+      <if test="activeTime != null">
+        active_time = #{activeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yoyu.pojo.ClientScript">
+    update client_script
+    set script_id = #{scriptId,jdbcType=INTEGER},
+      client_id = #{clientId,jdbcType=INTEGER},
+      expire_date = #{expireDate,jdbcType=INTEGER},
+      active_time = #{activeTime,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

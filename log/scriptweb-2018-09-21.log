@@ -1,0 +1,64 @@
+2018-09-21 00:00:02,449 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-21 00:00:02,472 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-21 00:00:02,474 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-21 00:00:02,476 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-21 00:00:02,477 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-21 00:00:02,483 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-21 00:01:05,828 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-21 00:01:05,829 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-21 00:01:05,831 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-21 00:01:05,833 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-21 00:01:05,833 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-21 00:01:05,837 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-21 00:01:15,936 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-21 00:01:15,936 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-21 00:01:15,938 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-21 00:01:15,939 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-21 00:01:15,940 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-21 00:01:15,944 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-21 00:01:46,407 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-21 00:01:46,408 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-21 00:01:46,410 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-21 00:01:46,412 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-21 00:01:46,413 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-21 00:01:46,417 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-21 00:01:56,274 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-21 00:01:56,275 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-21 00:01:56,276 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-21 00:01:56,279 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-21 00:01:56,281 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-21 00:01:56,284 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-21 00:02:00,425 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-21 00:02:00,425 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-21 00:02:00,426 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-21 00:02:00,428 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-21 00:02:00,429 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-21 00:02:00,433 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-21 00:02:05,246 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-21 00:02:05,247 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-21 00:02:05,248 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-21 00:02:05,250 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-21 00:02:05,251 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-21 00:02:05,255 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-21 00:09:54,205 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(0) FROM script_info 
+2018-09-21 00:09:54,206 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-09-21 00:09:54,208 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-09-21 00:09:54,210 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select id, script_name, intro, logo, create_time,detail from script_info LIMIT ? 
+2018-09-21 00:09:54,210 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 10(Integer)
+2018-09-21 00:09:54,214 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2018-09-21 00:11:34,049 INFO (StartupInfoLogger.java:48)- Starting Application on DESKTOP-GG6D0SA with PID 2624 (F:\software\eclipse\workspace\workspace-scriptweb\scriptweb\target\classes started by shuju in F:\software\eclipse\workspace\workspace-scriptweb\scriptweb)
+2018-09-21 00:11:34,051 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2018-09-21 00:11:34,051 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-09-21 00:11:39,294 INFO (StartupInfoLogger.java:57)- Started Application in 5.462 seconds (JVM running for 1056.117)
+2018-09-21 00:11:50,143 INFO (StartupInfoLogger.java:48)- Starting Application on DESKTOP-GG6D0SA with PID 2624 (F:\software\eclipse\workspace\workspace-scriptweb\scriptweb\target\classes started by shuju in F:\software\eclipse\workspace\workspace-scriptweb\scriptweb)
+2018-09-21 00:11:50,144 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2018-09-21 00:11:50,144 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-09-21 00:11:54,403 INFO (StartupInfoLogger.java:57)- Started Application in 4.36 seconds (JVM running for 1071.227)
+2018-09-21 00:20:22,732 INFO (StartupInfoLogger.java:48)- Starting Application on DESKTOP-GG6D0SA with PID 2624 (F:\software\eclipse\workspace\workspace-scriptweb\scriptweb\target\classes started by shuju in F:\software\eclipse\workspace\workspace-scriptweb\scriptweb)
+2018-09-21 00:20:22,732 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2018-09-21 00:20:22,732 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-09-21 00:20:25,385 INFO (StartupInfoLogger.java:57)- Started Application in 2.704 seconds (JVM running for 1582.209)
+2018-09-21 01:06:38,716 INFO (StartupInfoLogger.java:48)- Starting Application on DESKTOP-GG6D0SA with PID 16464 (F:\software\eclipse\workspace\workspace-scriptweb\scriptweb\target\classes started by shuju in F:\software\eclipse\workspace\workspace-scriptweb\scriptweb)
+2018-09-21 01:06:38,717 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2018-09-21 01:06:38,718 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-09-21 01:06:46,008 INFO (StartupInfoLogger.java:57)- Started Application in 7.757 seconds (JVM running for 8.653)
