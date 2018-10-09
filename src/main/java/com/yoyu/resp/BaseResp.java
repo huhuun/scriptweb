@@ -1,9 +1,7 @@
 package com.yoyu.resp;
 
-import java.util.List;
-
+import com.yoyu.constant.CommonConstants;
 import com.yoyu.pojo.Datatable;
-import com.yoyu.pojo.PageInfo;
 
 public class BaseResp <T>{
 
@@ -19,6 +17,20 @@ public class BaseResp <T>{
 //	
 //	private PageInfo page;
 
+	public BaseResp() {
+		this.code = CommonConstants.RESP_CODE_SUCCESS;
+		this.msg = CommonConstants.RESP_MSG_SUCCESS;
+	}
+	
+	public BaseResp(String msg) {
+		this.code = CommonConstants.RESP_CODE_SUCCESS;
+		this.msg = msg;
+	}
+	public BaseResp(String msg, String code) {
+		this.code = code;
+		this.msg = msg;
+	}
+	
 	public String getCode() {
 		return code;
 	}

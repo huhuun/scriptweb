@@ -1,11 +1,13 @@
 package com.yoyu.resp;
 
+import com.alibaba.fastjson.JSONObject;
+
 public class ScriptApiResp {
 
 	
 	private static String DEFAULT_CODE = "0";
 	private static String DEFAULT_MSG = "success";
-	private static String DEFAULT_DATA = "";
+	private static String DEFAULT_DATA = "{}";
 	
 	private String code;
 	
@@ -16,7 +18,13 @@ public class ScriptApiResp {
 	public ScriptApiResp() {
 		this.code = DEFAULT_CODE;
 		this.msg = DEFAULT_MSG;
-		this.data = DEFAULT_DATA;
+		this.data = new JSONObject();
+	}
+	
+	public ScriptApiResp(Object data) {
+		this.code = DEFAULT_CODE;
+		this.msg = DEFAULT_MSG;
+		this.data = data;
 	}
 	
 	public ScriptApiResp(String code, String msg) {

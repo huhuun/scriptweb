@@ -39,7 +39,7 @@ public class AdminController {
 	@RequestMapping("/script.html")
 	public String getScript() {
 	
-		return "admin/script";
+		return "/admin/script";
 	}
 	
 	

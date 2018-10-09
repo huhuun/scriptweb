@@ -459,7 +459,7 @@ desired effect
 				</h4>
 			</div>
 			<div class="modal-body" style="overflow: hidden;">
-				<form class="col-md-offset-1" method="post" action="#">
+				<form class="col-md-offset-1" method="post" action="/script/addScriptInfo.json">
 				
 					<div class="form-group">
 	                  <label for="scriptName" class="col-sm-3 control-label text-right">脚本logo：</label>
@@ -467,7 +467,7 @@ desired effect
 	                  	<a href="#" class="thumbnail" style="display:none">
 						   <img src="" id="logoImg" alt="...">
 						</a>
-	                    <input type="file" name="logo" id="logo" accept="image/*">
+	                    <input type="file" name="file" id="logo" accept="image/*">
 	                  </div>
 	                </div> 
 			        <div class="form-group">
@@ -487,7 +487,7 @@ desired effect
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
 				</button>
-				<button type="submit" class="btn btn-primary">
+				<button type="submit" class="btn btn-primary" onclick="add()">
 					提交  
 				</button>
 			</div>
@@ -519,9 +519,12 @@ desired effect
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
      user experience. -->
-<script>
+<script th:inline="javascript">
+
+
   $(function () {
-	 
+	  var context = [[@{/}]]; 
+	  //alert(context);
 	  $("#logo").change(function(e){
 		  //var url = $(this).val();
 		  var url = window.URL.createObjectURL($(this).prop("files")[0]);
@@ -604,7 +607,7 @@ desired effect
        ],
 	  'serverSide'  : true,
 	  'ajax':{
-			'url':'http://localhost:8080/script/getScriptInfoList.json', 
+			'url': context +'script/getScriptInfoList.json', 
 			'type':'POST' ,
 			'data':{//请求参数
 			 },
@@ -621,6 +624,46 @@ desired effect
 	   } 
     })
   })
+  
+  function add(){
+	  
+	var file = $('#logo').prop('files');
+	console.log(file);
+	if(file.length == 0){
+		alert("文件为空!");
+		return;
+	}
+	var scriptName = $('#scriptName').val();
+	if(!scriptName){
+		alert("脚本名称为空!");
+		return;
+	}
+	var intro = $('#intro').val();
+	
+    var form = new FormData();
+    form.append('logo',file[0]);
+    form.append("scriptName",scriptName);
+    form.append("intro",intro);
+    $.ajax({            
+	   type: "POST",           
+	   data: form,            
+	   url: "/script/addScriptInfo.json",
+	   async : true,
+	   processData: false,//必须
+	   contentType:false,//必须
+	   mimeType: "multipart/form-data",
+	   success: function (data) {
+		   $('#addModal').modal('hide');
+		   if(data.code == '0'){
+			   $('#addModal').modal('hide');
+		   }
+		   console.log(data)
+	   },            
+	   error: function (data) { 
+		   console.log(data)
+	   }        
+	 });
+  }
 </script>     
      
      

@@ -19,7 +19,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 
-		registry.addInterceptor(getScriptInterceptor()).addPathPatterns("/**");
+		registry.addInterceptor(getScriptInterceptor()).addPathPatterns("/api/**");
 		super.addInterceptors(registry);
 	}
 	@Override

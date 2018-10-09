@@ -8,6 +8,11 @@ public class ScriptException extends Exception {
 	
 	private String msg;
 	
+	public ScriptException(String msg) {
+		this.code = "-1";
+		this.msg = msg;
+	}
+	
 	public ScriptException(String code, String msg) {
 		this.code = code;
 		this.msg = msg;
