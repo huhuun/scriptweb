@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>卡片测试 · Open Graph Preview</title>
+<meta name="description" content="这是一个用于验证社交平台是否能识别 Open Graph 标签并渲染成分享卡片的测试页面。">
+
+<meta property="og:site_name" content="OG 卡片测试">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="卡片测试 · Open Graph Preview">
+<meta property="og:description" content="如果你在聊天里看到标题+封面图的横条卡片，说明 OG 标签生效了。">
+<meta property="og:url" content="https://huhuun.github.io/og-card-test/">
+<meta property="og:image" content="https://huhuun.github.io/og-card-test/cover.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="卡片测试封面">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="卡片测试 · Open Graph Preview">
+<meta name="twitter:description" content="验证 OG 标签是否被识别为分享卡片。">
+<meta name="twitter:image" content="https://huhuun.github.io/og-card-test/cover.png">
+
+<meta itemprop="name" content="卡片测试 · Open Graph Preview">
+<meta itemprop="description" content="验证 OG 标签是否被识别为分享卡片。">
+<meta itemprop="image" content="https://huhuun.github.io/og-card-test/cover.png">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🃏</text></svg>">
+
+<style>
+  :root{
+    --ink:#14161f; --sub:#5b6072; --line:#e6e7ee; --bg:#fbfbfd;
+  }
+  *{box-sizing:border-box;margin:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:680px;margin:0 auto;padding:48px 20px 80px}
+  img.hero{width:100%;border-radius:12px;display:block;border:1px solid var(--line)}
+  h1{font-size:26px;letter-spacing:-.02em;margin:28px 0 8px}
+  .lead{color:var(--sub);font-size:15px;margin-bottom:32px}
+  section{border-top:1px solid var(--line);padding:22px 0}
+  h2{font-size:13px;font-weight:600;color:var(--sub);letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  td{padding:7px 0;vertical-align:top;border-bottom:1px solid var(--line)}
+  td:last-child{text-align:right;color:var(--sub);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;word-break:break-all;max-width:60%}
+  tr:last-child td{border-bottom:none}
+  .ok{color:#0a8f4c;font-weight:600}
+  .no{color:#c2410c;font-weight:600}
+  .note{background:#fff;border:1px solid var(--line);border-left:3px solid #6366f1;border-radius:8px;padding:14px 16px;font-size:13.5px;color:var(--sub);margin-top:16px}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;background:#f1f2f7;padding:1px 5px;border-radius:4px;color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <img class="hero" src="cover.png" alt="卡片测试封面" width="1200" height="630">
+
+  <h1>卡片测试</h1>
+  <p class="lead">这个页面用来验证：把链接发到社交平台，是否会被抓成「标题 + 封面图」的分享卡片。</p>
+
+  <section>
+    <h2>怎么测</h2>
+    <table>
+      <tr><td class="ok">微信 · 从页面右上角 ··· 转发</td><td>可能出卡片（走 JS-SDK，本页未接）</td></tr>
+      <tr><td class="no">微信 · 聊天里直接粘贴 URL</td><td>永远是蓝色纯文本</td></tr>
+      <tr><td class="ok">QQ / 钉钉 / 飞书</td><td>粘贴即出卡片，读 OG</td></tr>
+      <tr><td class="ok">Telegram / Slack / Discord / X</td><td>粘贴即出卡片，读 OG</td></tr>
+    </table>
+    <div class="note">
+      微信没有通用的 link unfurling。聊天卡片只能由公众号文章、小程序、视频号、收藏笔记、企业微信消息这五类实体产生，自有 H5 不在其中——<strong>OG 标签写得再全也没用</strong>。想验证 OG 本身是否正确，用上面打勾的平台。
+    </div>
+  </section>
+
+  <section>
+    <h2>本页声明的 OG 字段</h2>
+    <table>
+      <tr><td>og:title</td><td>卡片测试 · Open Graph Preview</td></tr>
+      <tr><td>og:description</td><td>如果你在聊天里看到标题+封面图的横条卡片…</td></tr>
+      <tr><td>og:image</td><td>https://huhuun.github.io/og-card-test/cover.png</td></tr>
+      <tr><td>og:image:width / height</td><td>1200 × 630</td></tr>
+      <tr><td>og:url</td><td>https://huhuun.github.io/og-card-test/</td></tr>
+      <tr><td>og:type / og:locale</td><td>website / zh_CN</td></tr>
+      <tr><td>twitter:card</td><td>summary_large_image</td></tr>
+    </table>
+    <div class="note">
+      另外还写了 <code>&lt;title&gt;</code>、<code>meta description</code>、<code>itemprop</code> 和一张正文内 <code>&lt;img&gt;</code>——部分抓取器（含微信内置浏览器）不读 OG，会退回用这几个字段拼标题和缩略图。
+    </div>
+  </section>
+
+  <section>
+    <h2>已知坑</h2>
+    <table>
+      <tr><td>github.io 在境内网络时通时断，微信内可能直接打不开</td><td>网络层</td></tr>
+      <tr><td>抓取器有缓存，改了 OG 不会立刻生效</td><td>需清缓存或用调试工具</td></tr>
+      <tr><td>og:image 必须是绝对 HTTPS 地址</td><td>相对路径一律失败</td></tr>
+      <tr><td>图建议 ≥ 1200×630 且 &lt; 1MB</td><td>过大不抓</td></tr>
+    </table>
+  </section>
+
+</div>
+</body>
+</html>
